@@ -1,0 +1,24 @@
+
+#add_btn {
+    display: block;
+}
+
+table {
+    background-color: white;
+    padding: 0;
+    tr {
+        margin: 0;
+        padding: 0;
+        td, th {
+            width: 200px;
+            height: 30px;
+            margin: 0;
+            padding: 5px;
+            p {
+                margin: 0;
+            }
+        }
+    }
+    
+
+}

@@ -1,0 +1,181 @@
+$box-color: #e0e4cc;
+$paragraph: "Arial";
+$def-size: 16px;
+
+header {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    height: 150px;
+    img {
+        margin: 40px;
+        margin-bottom: 0;
+    }
+    #menu {
+        margin-left: auto;
+        width: 80px;
+        height: 80px;
+    }
+    h1 {
+        align-self: center;
+        font-size: 2*$def-size;
+    }
+    ul {
+        margin-right: 40px;
+        margin-top: 40px;
+        list-style-type: none;
+        display: flex;
+        margin-left: auto;
+        li {
+            margin: 20px;
+        }
+    }
+}
+
+a {
+    color: black;
+}
+
+h2 {
+    font-size: 1.5*$def-size;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 1em;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    margin: 0;
+    padding: 0;
+    flex: 1 0 auto;
+}
+
+.container {
+    margin: 20px;
+    padding: 20px;
+    background-color: $box-color;
+    border: 2px solid black;
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    font-family: $paragraph;
+    div {
+        border: 2px solid black;
+        width: 100px;
+        height: 50px;
+        text-align: center;
+        line-height: 10px;
+        position: relative;
+        margin-top: -22px;
+        margin-right: -22px;
+        padding: 0;
+        align-self: flex-end; 
+    }
+}
+
+#art1 {
+    background-color: cyan;
+}
+
+#art2 {
+    background-color: darkorange;
+}
+
+#art3 {
+    background-color: darksalmon;
+}
+
+footer {
+    background-color: $box-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    flex-shrink: 0;
+    font-family: $paragraph;
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    header {
+        h1 {
+            display: none;
+        }
+        ul {
+            display: none;
+        }
+    }
+
+    main {
+        position: relative;
+        max-width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-self: flex-start; 
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+    header {
+        ul {
+            display: none;
+        }
+    }
+
+    main {
+        position: relative;
+        max-width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-self: flex-start;
+        flex-wrap: wrap;
+        
+        .container {
+            width: 10%;
+        }
+
+        #con1 {
+            min-width: 80%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    header {
+        #menu {
+            display: none;
+        }
+    }
+
+    main {
+        position: relative;
+        max-width: 100%;
+        margin: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-self: flex-start;
+
+        .container {
+            width: 10%;
+        }
+    }
+
+
+}

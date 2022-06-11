@@ -1,0 +1,223 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  width: 100%;
+  height: 150px;
+}
+
+header img {
+  margin: 40px;
+  margin-bottom: 0;
+}
+
+header #menu {
+  margin-left: auto;
+  width: 80px;
+  height: 80px;
+}
+
+header h1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 32px;
+}
+
+header ul {
+  margin-right: 40px;
+  margin-top: 40px;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+}
+
+header ul li {
+  margin: 20px;
+}
+
+a {
+  color: black;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-size: 1em;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content {
+  margin: 0;
+  padding: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.container {
+  margin: 20px;
+  padding: 20px;
+  background-color: #e0e4cc;
+  border: 2px solid black;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: justify;
+  font-family: "Arial";
+}
+
+.container div {
+  border: 2px solid black;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  line-height: 10px;
+  position: relative;
+  margin-top: -22px;
+  margin-right: -22px;
+  padding: 0;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+#art1 {
+  background-color: cyan;
+}
+
+#art2 {
+  background-color: darkorange;
+}
+
+#art3 {
+  background-color: darksalmon;
+}
+
+footer {
+  background-color: #e0e4cc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  font-family: "Arial";
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 599px) {
+  header h1 {
+    display: none;
+  }
+  header ul {
+    display: none;
+  }
+  main {
+    position: relative;
+    max-width: 100%;
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+  header ul {
+    display: none;
+  }
+  main {
+    position: relative;
+    max-width: 100%;
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main .container {
+    width: 10%;
+  }
+  main #con1 {
+    min-width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  header #menu {
+    display: none;
+  }
+  main {
+    position: relative;
+    max-width: 100%;
+    margin: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  main .container {
+    width: 10%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

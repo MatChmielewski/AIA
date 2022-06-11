@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+        <script type="text/javascript" src="geturl.js"></script>
+        <script type="text/javascript">
+             $(document).ready(function() {
+                get('https://jsonplaceholder.typicode.com/posts').then(function(response) {
+                    $(".content").append('<p>'+response+'</p>');
+                    console.log("Success!", response);
+                }, function(error) {
+                    console.error("Failed!", error);
+                })
+             });
+        </script>
+    </head>
+    <body>
+        <h1>Site content</h1>
+        <div class="content">
+
+        </div>
+    </body>
+</html>

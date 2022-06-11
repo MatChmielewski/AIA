@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>jQuery</title>
+        <style>
+            .asdf{background: Pink;}
+        </style>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                $('button:contains(\'A\')').click(function () {
+                $('#classic').addClass('asdf');
+                });
+                $('button:contains(\'B\')').click(function () {
+                $('#classic').removeClass('asdf');
+                });
+                $('button:contains(\'C\')').click(function () {
+                $('#toggle').toggleClass('asdf');
+                });
+                $('tr:even').addClass('asdf');
+
+                let zad9 = $('ol li[class="a"]:has(.b:not(:has(a))), ol li[class="a"]:not(:has(.b))');
+                zad9.addClass('asdf');
+
+            });
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr><td>First</td></tr>
+            <tr><td>Second</td></tr>
+            <tr><td>Third</td></tr>
+            <tr><td>Fourth</td></tr>
+            <tr><td>Fifth</td></tr>
+            <tr><td>Sixth/td></tr>
+        </table>
+        <div><button>Text A</button><button>Text B</button><span id="classic">Adding/removing
+        class</span></div>
+        <div><button>Text C</button><span id="toggle">Toggling class</span></div>
+        
+        <ol>
+            <li><div class="a"><a href="">Link 1</a></div></li>
+            <li class="a"><div class="a"><a href="">Link 2</a></div><div class="b">asdfasfsdf</div></li>
+            <li class="a"><div class="a"><a href="">Link 3</a></div><div class="b"><a href="">Link in class b</a></div></li>
+            <li class="a"><a href="">Link 4</a></li>
+        </ol>
+    </body>
+</html>

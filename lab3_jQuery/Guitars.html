@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <title>jQuery getJSON() Method</title>
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script type="text/javascript" language="javascript">
+    $(document).ready(function() {
+        $("#fetch").click(function(event) {
+            $.getJSON('guitars.json', function(emp) {
+                $.each(emp.Guitars.Guitar, function(n, el){
+                    $('#display').append('<p>Brand: '+ el.Brand +', Model: ' + el.Model + '</p>');
+                })
+            });
+        });
+    });
+    </script>
+</head> 
+<body>
+    <input type="button" id="fetch" value="Load" /> </body>
+    <div id="display"></div>
+</html>

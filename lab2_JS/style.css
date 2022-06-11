@@ -1,0 +1,25 @@
+#add_btn {
+  display: block;
+}
+
+table {
+  background-color: white;
+  padding: 0;
+}
+
+table tr {
+  margin: 0;
+  padding: 0;
+}
+
+table tr td, table tr th {
+  width: 200px;
+  height: 30px;
+  margin: 0;
+  padding: 5px;
+}
+
+table tr td p, table tr th p {
+  margin: 0;
+}
+/*# sourceMappingURL=style.css.map */
